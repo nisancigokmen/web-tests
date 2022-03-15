@@ -2,20 +2,19 @@
 
 > Tests for a web eco system.
 
-
 ## What
 
-Testing web features in a way that represents real world usage by web developers.
+-> Testing web features in a way that represents real world usage by web developers.
 
 ## Why
 
-There is a blind spot between [WPT](https://github.com/web-platform-tests/wpt), [caniuse](https://caniuse.com), [MDN compatibility](https://github.com/mdn/browser-compat-data), tooling and polyfills. Each part is well tested on its own but only with itself in mind.
+-> There is a blind spot between [WPT](https://github.com/web-platform-tests/wpt), [caniuse](https://caniuse.com), [MDN compatibility](https://github.com/mdn/browser-compat-data), tooling and polyfills. Each part is well tested on its own but only with itself in mind.
 
-None of these can actually guarantee your code will work, and for how many users.
+-> None of these can actually guarantee your code will work, and for how many users.
 
-This project aims to eliminate that blind spot.
+-> This project aims to eliminate that blind spot.
 
-There is also the concern that tooling and browsers are updated all the time.
+T-> here is also the concern that tooling and browsers are updated all the time.
 No one guarantees that everything that works today will work tomorrow.
 This project is also a log or delta of what works or is broken.
 
@@ -23,9 +22,9 @@ This project is also a log or delta of what works or is broken.
 
 [Check the results](https://mrhenry.github.io/web-tests/)
 
-Scores are represented as [nines](https://en.wikipedia.org/wiki/High_availability#"Nines").
-Each failing/passing test is weighted by the global usage of the browser from the test result.
-This gives an approximate "reliability" of a feature in the real world.
+-> Scores are represented as [nines](https://en.wikipedia.org/wiki/High_availability#"Nines").
+-> Each failing/passing test is weighted by the global usage of the browser from the test result.
+-> This gives an approximate "reliability" of a feature in the real world.
 
 ## Tested
 
@@ -42,10 +41,10 @@ _suggestions for other tools are welcome_
 
 ## How
 
-Web Tests is a chaotic test runner. Each day a random set of browsers is picked in a random order. Each of these will run a random set of tests, again in a random order.
+-> Web Tests is a chaotic test runner. Each day a random set of browsers is picked in a random order. Each of these will run a random set of tests, again in a random order.
 
-Test failures reduce the score of a feature in a certain browser by `0.01`. Test passes increase the score by `0.02`.
-This way we can differentiate between transient errors and real bugs. Tests (or test environments) that are a bit flaky should still score high enough to indicate a working feature.
+-> Test failures reduce the score of a feature in a certain browser by `0.01`. Test passes increase the score by `0.02`.
+-> This way we can differentiate between transient errors and real bugs. Tests (or test environments) that are a bit flaky should still score high enough to indicate a working feature.
 
 ## Get started
 
